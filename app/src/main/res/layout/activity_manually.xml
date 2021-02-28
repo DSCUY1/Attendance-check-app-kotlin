@@ -23,17 +23,20 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floating_action_button"
-        android:layout_width="wrap_content"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/outlinedTextField"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_marginBottom="60dp"
-        android:layout_marginRight="16dp"
-        android:contentDescription="btn float"
-        app:srcCompat="@drawable/ic_plus_24"
-        tools:ignore="VectorDrawableCompat"
-        app:fabCustomSize="80dp"/>
+        android:hint="Supervisor code"
+        android:layout_gravity="center_vertical"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
@@ -48,26 +51,5 @@
         app:labelVisibilityMode="labeled"
         app:layout_behavior="@string/hide_bottom_view_on_scroll_behavior"
         app:menu="@menu/bottom_navigation_menu"/>
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal|center_vertical"
-        android:fontFamily="@font/roboto"
-        android:text="Hello and Welcome"
-        android:textColor="#DE000000"
-        android:textSize="30sp" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="375dp"
-        android:fontFamily="@font/roboto_light"
-        android:text="Tap on '+' button to scan a badge"
-        android:textColor="#DE000000"
-        android:textSize="24sp" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

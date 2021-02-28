@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">Attendance Check</string>
+    <string name="app_name">Attendance Check App</string>
+    <string name="logout">Logout</string>
 </resources>
