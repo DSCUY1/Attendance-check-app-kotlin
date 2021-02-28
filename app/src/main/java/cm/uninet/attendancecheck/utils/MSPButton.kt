@@ -3,10 +3,9 @@ package cm.uninet.attendancecheck.utils
 import android.content.Context
 import android.graphics.Typeface
 import android.util.AttributeSet
-import androidx.appcompat.widget.AppCompatTextView
-import java.security.AccessControlContext
+import androidx.appcompat.widget.AppCompatButton
 
-class MSPTextViewRegular(context: Context, attrs: AttributeSet) : AppCompatTextView(context, attrs) {
+class MSPButton(context: Context, attrs: AttributeSet) : AppCompatButton(context, attrs) {
     init {
         // call the function to apply the font to the components.
         applyFont()
@@ -15,7 +14,7 @@ class MSPTextViewRegular(context: Context, attrs: AttributeSet) : AppCompatTextV
     private fun applyFont() {
 
         val typeface: Typeface =
-            Typeface.createFromAsset(context.assets, "Roboto-Thin.ttf")
+            Typeface.createFromAsset(context.assets, "Roboto-Regular.ttf")
         setTypeface(typeface)
     }
 }

@@ -3,10 +3,9 @@ package cm.uninet.attendancecheck.utils
 import android.content.Context
 import android.graphics.Typeface
 import android.util.AttributeSet
-import androidx.appcompat.widget.AppCompatTextView
-import java.security.AccessControlContext
+import androidx.appcompat.widget.AppCompatEditText
 
-class MSPTextViewRegular(context: Context, attrs: AttributeSet) : AppCompatTextView(context, attrs) {
+class MSPEditText(context: Context, attrs: AttributeSet) : AppCompatEditText(context, attrs) {
     init {
         // call the function to apply the font to the components.
         applyFont()
