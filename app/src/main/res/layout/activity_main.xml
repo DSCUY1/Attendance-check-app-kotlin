@@ -32,8 +32,7 @@
         android:layout_marginRight="16dp"
         android:contentDescription="btn float"
         app:srcCompat="@drawable/ic_plus_24"
-        tools:ignore="VectorDrawableCompat"
-        app:fabCustomSize="80dp"/>
+        tools:ignore="VectorDrawableCompat"/>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
@@ -49,25 +48,32 @@
         app:layout_behavior="@string/hide_bottom_view_on_scroll_behavior"
         app:menu="@menu/bottom_navigation_menu"/>
 
-    <TextView
-        android:id="@+id/textView"
+    <cm.uninet.attendancecheck.utils.MSPTextViewRegular
+        android:id="@+id/a_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal|center_vertical"
-        android:fontFamily="@font/roboto"
-        android:text="Hello and Welcome"
-        android:textColor="#DE000000"
-        android:textSize="30sp" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:gravity="center_vertical|center_horizontal"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="375dp"
-        android:fontFamily="@font/roboto_light"
+        android:text="Hello and Welcome"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bottom_navigation" />
+
+    <cm.uninet.attendancecheck.utils.MSPTextViewThin
+        android:id="@+id/b_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="185dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_gravity="center_horizontal"
         android:text="Tap on '+' button to scan a badge"
-        android:textColor="#DE000000"
-        android:textSize="24sp" />
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/_text" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
