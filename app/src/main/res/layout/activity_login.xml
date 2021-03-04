@@ -44,6 +44,7 @@
         android:layout_marginEnd="16dp"
         android:layout_marginTop="25dp"
         app:endIconMode="custom"
+        app:errorEnabled="true"
         app:endIconDrawable="@drawable/ic_person_24"
         android:textColorHint="@color/black"
         app:boxStrokeColor="@color/primaryColor"
