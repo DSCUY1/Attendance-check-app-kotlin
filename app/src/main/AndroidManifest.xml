@@ -9,9 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AttendanceCheck">
-        <activity android:name=".LoginActivity"
+        <activity android:name=".affirmation_error"></activity>
+        <activity android:name=".affirmation_ok" />
+        <activity
+            android:name=".LoginActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/Theme.Design.NoActionBar"></activity>
+            android:theme="@style/Theme.Design.NoActionBar" />
         <activity
             android:name=".activities.SplashActivity"
             android:screenOrientation="portrait"
@@ -23,8 +26,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".activities.Manually" />
-        <activity android:name=".activities.MainActivity"
-            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activities.MainActivity"
+            android:screenOrientation="portrait" />
 
         <meta-data
             android:name="preloaded_fonts"
