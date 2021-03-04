@@ -3,4 +3,10 @@
     <string name="logout">Logout</string>
 
     <string name="title_login">Log in</string>
+
+    <string name="txt_confirmed">Confirmed</string>
+    <string name="bt_affirmation_home">Home</string>
+    <string name="img_affirmation_ok">img_ok</string>
+    <string name="txt_not_recognized">Not recognized</string>
+    <string name="img_affirmation_error">img_error</string>
 </resources>
