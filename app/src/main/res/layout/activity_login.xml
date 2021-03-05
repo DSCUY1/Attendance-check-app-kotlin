@@ -34,11 +34,11 @@
     </cm.uninet.attendancecheck.utils.MSPTextViewRegular>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/t_username"
+        android:id="@+id/t_email"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Username"
+        android:hint="Email adress"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginEnd="16dp"
@@ -53,11 +53,11 @@
         app:layout_constraintTop_toBottomOf="@+id/login_text">
 
         <cm.uninet.attendancecheck.utils.MSPEditText
-            android:id="@+id/username"
+            android:id="@+id/email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/black"
-            android:inputType="text"/>
+            android:inputType="textEmailAddress"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -76,7 +76,7 @@
         app:boxStrokeColor="@color/primaryColor"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/t_username">
+        app:layout_constraintTop_toBottomOf="@+id/t_email">
 
         <cm.uninet.attendancecheck.utils.MSPEditText
             android:id="@+id/password"
