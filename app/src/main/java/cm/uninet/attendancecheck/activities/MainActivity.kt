@@ -1,6 +1,5 @@
 package cm.uninet.attendancecheck.activities
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import cm.uninet.attendancecheck.R
 import com.google.android.material.bottomnavigation.BottomNavigationView

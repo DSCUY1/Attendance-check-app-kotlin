@@ -183,7 +183,7 @@
         android:layout_marginLeft="45dp"
         android:layout_marginBottom="120dp"
         android:fontFamily="@font/roboto"
-        android:text="@string/verification_bt_rescan"
+        android:text="@string/bt_verification_rescan"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
         app:layout_constraintStart_toStartOf="parent" />
@@ -195,7 +195,7 @@
         android:layout_marginEnd="35dp"
         android:layout_marginRight="35dp"
         android:fontFamily="@font/roboto"
-        android:text="@string/verification_bt_confirm"
+        android:text="@string/bt_verification_confirm"
         android:textStyle="bold"
         app:backgroundTint="@color/primaryDarkColor"
         app:layout_constraintBottom_toBottomOf="@+id/bt_verification_rescan"
