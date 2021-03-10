@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.text.InputType
 import android.text.TextUtils
 import android.view.View
 import android.view.WindowInsets
@@ -28,6 +29,9 @@ class LoginActivity : BaseActivity(), View.OnClickListener {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN
             )
         }
+
+        email.inputType = InputType.TYPE_CLASS_TEXT or  InputType.TYPE_TEXT_VARIATION_EMAIL_ADDRESS
+//        email.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_EMAIL_ADDRESS)
 
 //        btn_login.setOnClickListener(){
 ////          startActivity(Intent(this@LoginActivity, MainActivity::class.java))
@@ -55,7 +59,7 @@ class LoginActivity : BaseActivity(), View.OnClickListener {
 
     private fun validateLoginDetails(): Boolean{
         return when{
-            TextUtils.isEmpty(username.text.toString().trim { it <= ' '}) -> {
+            TextUtils.isEmpty(email.text.toString().trim { it <= ' '}) -> {
                 showErrorSnackBar("Veuillez entrer un nom d'utilisateur", true)
                 false
             }
@@ -74,7 +78,7 @@ class LoginActivity : BaseActivity(), View.OnClickListener {
         if (validateLoginDetails()){
             showProgressDialog("Please wait...")
 
-            val user = username.text.toString().trim { it <= ' '}
+            val user = email.text.toString().trim { it <= ' '}
             val pass = password.text.toString()
 
             if (user == "admin" && pass == "admin"){
@@ -87,8 +91,8 @@ class LoginActivity : BaseActivity(), View.OnClickListener {
                 if (user != "admin"){
                     hideProgressDialog()
                     showErrorSnackBar("Username incorrect !!!", true)
-                    t_username.endIconMode = TextInputLayout.END_ICON_NONE
-                    username.error = "Username incorrect !!!"
+                    t_email.endIconMode = TextInputLayout.END_ICON_NONE
+                    email.error = "Username incorrect !!!"
                 }
                 if (pass != "admin"){
                     hideProgressDialog()

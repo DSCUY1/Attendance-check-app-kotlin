@@ -1,8 +1,13 @@
 package cm.uninet.attendancecheck.activities
 
+import android.app.Activity
+import android.content.Intent
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import cm.uninet.attendancecheck.R
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.zxing.integration.android.IntentIntegrator
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : BaseActivity() {
@@ -26,6 +31,28 @@ class MainActivity : BaseActivity() {
                     true
                 }
                 else -> false
+            }
+        }
+
+        floating_action_button.setOnClickListener {
+            val scanner = IntentIntegrator(this)
+            scanner.setDesiredBarcodeFormats(IntentIntegrator.QR_CODE)
+            scanner.initiateScan()
+        }
+    }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        if (resultCode == Activity.RESULT_OK){
+            val result = IntentIntegrator.parseActivityResult(requestCode, resultCode, data);
+            if(result != null) {
+                if(result.contents == null) {
+                    Toast.makeText(this, "Cancelled", Toast.LENGTH_LONG).show();
+                } else {
+                    Toast.makeText(this, "Scanned: " + result.contents, Toast.LENGTH_LONG).show();
+                    showErrorSnackBar(result.contents, errorMessage = false)
+                }
+            } else {
+                super.onActivityResult(requestCode, resultCode, data);
             }
         }
     }
