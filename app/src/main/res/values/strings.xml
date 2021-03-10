@@ -11,12 +11,19 @@
     <string name="img_affirmation_error">img_error</string>
     <string name="verification_app_bar">Verification</string>
     <string name="verification_info">Verify, then validate</string>
-    <string name="verification_warning">If these informations are correct,<br/>   please press "Confirm" button</string>
+    <string name="verification_warning">If these information are correct,<br/>   please press "Confirm" button</string>
     <string name="verification_supervisor">Supervisor :</string>
     <string name="verification_code">Code :</string>
     <string name="verification_date">Date :</string>
     <string name="verification_room">Room :</string>
     <string name="verification_time_range">Time Range :</string>
-    <string name="verification_bt_confirm">Confirm</string>
-    <string name="verification_bt_rescan">Re-scan</string>
+    <string name="bt_verification_confirm">Confirm</string>
+    <string name="bt_verification_rescan">Re-scan</string>
+    <string name="txt_manually_register">Register</string>
+    <string name="txt_manually_monitoring">a new monitoring manueally</string>
+    <string name="txt_manually_supervisor_hint">  Supervisor  </string>
+    <string name="txt_manually_room_hint"> Room  </string>
+    <string name="txt_manually_date_hint"> Date  </string>
+    <string name="txt_manually_time_hint"> Time Range  </string>
+    <string name="bt_manually_save">save</string>
 </resources>
