@@ -9,4 +9,14 @@
     <string name="img_affirmation_ok">img_ok</string>
     <string name="txt_not_recognized">Not recognized</string>
     <string name="img_affirmation_error">img_error</string>
+    <string name="verification_app_bar">Verification</string>
+    <string name="verification_info">Verify, then validate</string>
+    <string name="verification_warning">If these informations are correct,<br/>   please press "Confirm" button</string>
+    <string name="verification_supervisor">Supervisor :</string>
+    <string name="verification_code">Code :</string>
+    <string name="verification_date">Date :</string>
+    <string name="verification_room">Room :</string>
+    <string name="verification_time_range">Time Range :</string>
+    <string name="verification_bt_confirm">Confirm</string>
+    <string name="verification_bt_rescan">Re-scan</string>
 </resources>
