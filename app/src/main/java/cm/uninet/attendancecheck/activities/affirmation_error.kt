@@ -1,22 +1,22 @@
-package cm.uninet.attendancecheck
+package cm.uninet.attendancecheck.activities
 
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
-import cm.uninet.attendancecheck.activities.MainActivity
+import cm.uninet.attendancecheck.R
 
-class affirmation_ok : AppCompatActivity() {
+class affirmation_error : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_affirmation_ok)
+        setContentView(R.layout.activity_affirmation_error)
 
-        val bt_affirmation = findViewById<Button>(R.id.bt_affirmation_ok)
+        val bt_affirmation = findViewById<Button>(R.id.bt_affirmation_error)
         bt_affirmation.setOnClickListener { back_to_home() }
         finish()
     }
 
     fun back_to_home(){
-        startActivity(Intent(this@affirmation_ok, MainActivity::class.java))
+        startActivity(Intent(this@affirmation_error, MainActivity::class.java))
     }
 }

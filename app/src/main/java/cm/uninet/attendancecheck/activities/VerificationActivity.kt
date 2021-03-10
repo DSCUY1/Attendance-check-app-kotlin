@@ -1,9 +1,10 @@
-package cm.uninet.attendancecheck
+package cm.uninet.attendancecheck.activities
 
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
+import cm.uninet.attendancecheck.R
 
 class VerificationActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
